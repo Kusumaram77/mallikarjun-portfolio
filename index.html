@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mallikarjun Kamari — aspiring Data Analyst portfolio, skills and projects.">
+  <title>Mallikarjun Kamari | Data Analyst Portfolio</title>
+  <style>
+    :root{--bg:#081323;--panel:#101e32;--panel2:#14253b;--text:#eef6ff;--muted:#a9b8cc;--teal:#55e0c1;--line:rgba(190,211,235,.15);--max:1100px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.7}
+    a{color:var(--teal)}.wrap{width:min(var(--max),92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(8,19,35,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:800;letter-spacing:.2px;color:var(--text);text-decoration:none}.brand span{color:var(--teal)}
+    nav{display:flex;gap:22px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-size:.94rem}nav a:hover{color:var(--teal)}
+    .hero{padding:76px 0 82px;background:radial-gradient(ellipse at 75% 20%,rgba(47,157,151,.15),transparent 38%),linear-gradient(135deg,#0a172a,#081323)}
+    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:52px}
+    .eyebrow{color:var(--teal);font-size:.82rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    h1{font-size:clamp(2.6rem,6vw,4.7rem);line-height:1.08;letter-spacing:-1.8px;margin:14px 0 20px}
+    h1 span{color:var(--teal)}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:9px;text-decoration:none;font-weight:750;border:1px solid var(--teal);transition:transform .2s}
+    .btn:hover{transform:translateY(-2px)}.primary{background:var(--teal);color:#071525}.secondary{color:var(--text);border-color:var(--line)}
+    .photo-frame{width:min(100%,330px);justify-self:center;padding:10px;border:1px solid rgba(85,224,193,.5);border-radius:28px;background:linear-gradient(145deg,rgba(85,224,193,.13),rgba(255,255,255,.02));box-shadow:0 24px 70px #0005;transform:rotate(2deg)}
+    .photo-frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 28%;border-radius:20px}.profile-initials{aspect-ratio:4/5;display:grid;place-items:center;font-size:5rem;font-weight:850;letter-spacing:-5px;color:var(--teal);background:linear-gradient(145deg,#142c42,#0b1829);border-radius:20px}
+    section{padding:72px 0}.section-head{margin-bottom:28px}.section-head .eyebrow{margin-bottom:8px}h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.2;margin:0 0 12px}.section-intro{color:var(--muted);max-width:720px;margin:0}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:24px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card p{color:var(--muted);margin:8px 0 0}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill h3,.project h3{margin:0 0 8px}.skill p{font-size:.96rem}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.tag{font-size:.85rem;border:1px solid rgba(85,224,193,.25);background:rgba(85,224,193,.08);color:#b8ffef;padding:5px 10px;border-radius:999px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{display:flex;flex-direction:column;min-height:260px}.project-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}.project-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(85,224,193,.1);color:var(--teal);font-size:1.35rem}.project p{flex:1}.note{font-size:.88rem;color:var(--muted);margin-top:12px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-link{display:block;padding:13px 0;border-bottom:1px solid var(--line);text-decoration:none;overflow-wrap:anywhere}.contact-link:last-child{border-bottom:0}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:760px){.hero-grid,.about-grid,.skills,.projects,.contact-grid{grid-template-columns:1fr}.hero{padding:54px 0}.photo-frame{width:min(68%,280px);grid-row:1}.hero-copy{text-align:center}.hero-copy .lead{margin-inline:auto}.actions{justify-content:center}nav{gap:12px}.nav{padding:12px 0;align-items:flex-start;flex-direction:column}section{padding:54px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">Mallikarjun<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Aspiring Data Analyst</div>
+        <h1>Hi, I'm <span>Mallikarjun Kamari.</span></h1>
+        <p class="lead">I’m a Computer Science engineering student building practical skills in data analysis, business intelligence, and turning information into clear, useful insights.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore My Projects</a>
+          <a class="btn secondary" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+      <div class="photo-frame profile-initials" role="img" aria-label="Mallikarjun Kamari initials">MK</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">A little about me</div><h2>Curious about data. Focused on learning.</h2>
+        <p class="section-intro">I’m pursuing a B.Tech in Computer Science and Engineering and working toward a career in data analytics. I enjoy organizing data, exploring patterns, and presenting information in a way that supports better decisions.</p>
+      </div>
+      <div class="about-grid">
+        <div class="card"><h3>My career goal</h3><p>To begin my career as a Data Analyst, keep improving through hands-on projects, and contribute to teams that use data to solve business problems.</p></div>
+        <div class="card"><h3>How I learn</h3><p>I focus on practical work: building dashboards, querying databases, and learning how analytics can help people understand business performance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background:rgba(255,255,255,.018)">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Tools & capabilities</div><h2>Skills I'm building</h2><p class="section-intro">A snapshot of my current toolkit. Power BI is still in progress, and I’m continuing to strengthen my analytics skills through practice.</p></div>
+      <div class="skills">
+        <div class="card skill"><h3>Data analysis</h3><p>Working with datasets, cleaning data, summarizing results, and exploring trends.</p><div class="tags"><span class="tag">Excel</span><span class="tag">PivotTables</span><span class="tag">Charts</span><span class="tag">Data Cleaning</span></div></div>
+        <div class="card skill"><h3>Querying & reporting</h3><p>Using SQL to filter, combine, aggregate, and analyze data stored in relational databases.</p><div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Joins</span><span class="tag">CTEs</span></div></div>
+        <div class="card skill"><h3>Business intelligence</h3><p>Learning to communicate business metrics through clear reports and dashboards.</p><div class="tags"><span class="tag">Power BI — Learning</span><span class="tag">Data Visualization</span><span class="tag">KPI Reporting</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Selected work</div><h2>Projects & experience</h2><p class="section-intro">Projects that reflect my learning in analytics and business reporting.</p></div>
+      <div class="projects">
+        <article class="card project">
+          <div class="project-top"><div class="project-icon" aria-hidden="true">▦</div><div><h3>SaaS Analytics and Reporting System</h3><div class="eyebrow">College project</div></div></div>
+          <p>A web-based analytics system designed to present business KPIs, revenue trends, customer information, and churn-related alerts in one place. It includes dashboard views and an Attention Center to highlight issues that may need review.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Express.js</span><span class="tag">MySQL</span><span class="tag">REST API</span></div>
+          <div class="note">Project is in development.</div>
+        </article>
+        <article class="card project">
+          <div class="project-top"><div class="project-icon" aria-hidden="true">✓</div><div><h3>Deloitte Virtual Job Simulation</h3><div class="eyebrow">Forage</div></div></div>
+          <p>Completed a Deloitte virtual job simulation through Forage. This experience is included as a virtual job simulation, not as employment at Deloitte.</p>
+          <div class="tags"><span class="tag">Virtual Experience</span><span class="tag">Business Analysis</span></div>
+          <div class="note">Add a certificate link here when you’re ready to share it publicly.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background:rgba(255,255,255,.018)">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Let's connect</div><h2>Contact me</h2><p class="section-intro">I’m interested in Data Analyst internship opportunities and opportunities to learn through real-world work.</p></div>
+      <div class="contact-grid">
+        <div class="card"><h3>Reach me</h3><a class="contact-link" href="mailto:YOUR-EMAIL@example.com">Add your email</a><a class="contact-link" href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">Add your GitHub profile</a><div class="note">Replace the email and GitHub placeholders with your own details before publishing.</div></div>
+        <div class="card"><h3>Currently looking for</h3><p>Data Analyst internships where I can apply Excel and SQL, continue learning Power BI, and contribute to practical reporting and analytics tasks.</p><div class="tags"><span class="tag">Internships</span><span class="tag">Data Analytics</span><span class="tag">Business Intelligence</span></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Mallikarjun Kamari</span><span>Built with curiosity and data.</span></div></footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
